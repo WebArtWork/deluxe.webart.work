@@ -29,8 +29,7 @@ header{position:sticky;top:0;z-index:40;background:#faf7f2eb;backdrop-filter:blu
 .reviews-grid{display:grid;grid-template-columns:auto 1fr;gap:72px;align-items:center}.big-score{font:400 clamp(6rem,13vw,10rem)/.85 var(--serif);letter-spacing:-.04em}.big-score small{display:block;margin-top:14px;font:700 .8rem/1.4 var(--sans);letter-spacing:.16em;text-transform:uppercase;color:var(--bronze-ink)}
 .location{background:#fff}.map{min-height:440px;border:1px solid var(--line);background:var(--beige)}.map iframe{display:block;width:100%;height:100%;min-height:440px;border:0}.addr{font:400 1.8rem/1.3 var(--serif);font-style:normal;margin:0 0 14px}
 .request{background:var(--beige)}.req-grid{display:grid;grid-template-columns:.85fr 1.15fr;gap:64px;align-items:start}.contact-list{margin:28px 0 0;display:grid;gap:10px}.contact-list a,.contact-list div{display:block;padding:16px 20px;background:#fff;border:1px solid var(--line)}.contact-list a:hover{border-color:var(--ink)}.contact-list small{display:block;font-size:.66rem;font-weight:700;letter-spacing:.16em;text-transform:uppercase;color:var(--bronze-ink)}.contact-list b{font-weight:600}
-form.req{background:#fff;border:1px solid var(--line);padding:34px}.form-title{font:400 1.8rem/1.1 var(--serif);margin:0 0 20px}.fields{display:grid;grid-template-columns:1fr 1fr;gap:16px}.fields .full{grid-column:1/-1}.f{display:flex;flex-direction:column;gap:6px;font-size:.84rem;font-weight:600}.f input{font:500 .96rem var(--sans);color:var(--ink);background:var(--warm);border:1px solid #a79d8e;padding:12px;min-height:48px;width:100%}.yn{border:0;margin:0;padding:0;min-width:0}.yn legend{font-size:.84rem;font-weight:600;margin-bottom:8px;padding:0}.opts{display:flex;gap:8px}.opt{position:relative}.opt input{position:absolute;inset:0;opacity:0;margin:0}.opt span{display:inline-block;min-width:68px;text-align:center;padding:10px 14px;border:1px solid #a79d8e;background:var(--warm);font-size:.9rem;font-weight:600}.opt input:checked+span{background:var(--charcoal);border-color:var(--charcoal);color:#fff}.req-foot{display:flex;flex-wrap:wrap;align-items:center;gap:16px;margin-top:26px}.req-foot p{margin:0;flex:1;min-width:220px;font-size:.84rem;color:var(--muted)}.req-foot p a{color:var(--ink)}
-form.off :disabled{cursor:not-allowed}form.off input,form.off .opt span{opacity:.6}form.off .btn:disabled{opacity:.5}form.off .btn:disabled:hover{background:var(--charcoal)}
+form.req{background:#fff;border:1px solid var(--line);padding:34px}.form-title{font:400 1.8rem/1.1 var(--serif);margin:0 0 20px}.fields{display:grid;grid-template-columns:1fr 1fr;gap:16px}.fields .full{grid-column:1/-1}.f{display:flex;flex-direction:column;gap:6px;min-width:0;font-size:.84rem;font-weight:600}.f small{font-weight:400;color:var(--muted)}.f input,.f textarea{font:500 .96rem var(--sans);color:var(--ink);background:var(--warm);border:1px solid #a79d8e;border-radius:0;padding:12px;min-height:48px;width:100%}.f textarea{min-height:110px;resize:vertical}.f input:focus,.f textarea:focus{outline:2px solid var(--bronze);outline-offset:1px}.f [aria-invalid=true]{border-color:var(--burgundy);box-shadow:inset 3px 0 0 var(--burgundy)}[data-error-for]{font-weight:500;color:var(--burgundy)}[data-error-for]:empty{display:none}.trap{position:absolute;left:-9999px;width:1px;height:1px;overflow:hidden}.req-foot{display:flex;flex-wrap:wrap;align-items:center;gap:16px;margin-top:26px}.req-foot p{margin:0;flex:1;min-width:220px;font-size:.84rem;color:var(--muted)}.req-foot p a{color:var(--ink)}.req-foot .btn[disabled]{opacity:.6;cursor:wait}.req-foot .btn[disabled]:hover{background:var(--charcoal)}[data-status]{margin:18px 0 0;padding:14px 18px;background:var(--warm);border-left:3px solid var(--olive);font-size:.92rem}[data-status]:empty{display:none}[data-status][data-state=error]{border-color:var(--burgundy)}[data-status] a{font-weight:600;text-decoration:underline}
 .final{padding:120px 0;background:var(--charcoal);color:#fff;text-align:center}.final .eyebrow{color:var(--gold)}.final .title{max-width:860px;margin:0 auto 18px}.final p{max-width:640px;margin:0 auto;color:#cfc9bf}.final .actions{justify-content:center}
 footer{background:#141516;color:#fff;padding:64px 0 26px}.foot{display:grid;grid-template-columns:1.5fr repeat(5,1fr);gap:32px}.foot .logo small{color:#a9a399}.foot address{font-style:normal;margin-top:20px;font-size:.86rem;color:#c4bdb2}.foot address a{display:block;margin-top:4px}.foot h4{margin:0 0 12px;font-size:.66rem;letter-spacing:.16em;text-transform:uppercase;color:var(--gold)}.foot a{color:#c4bdb2;font-size:.84rem}.foot div>a{display:block;margin:6px 0}.foot a:hover{color:#fff}.copyright{margin-top:44px;padding-top:18px;border-top:1px solid #ffffff17;font-size:.72rem;color:#8e887f}.mobile-cta{display:none}
 html.js .reveal{opacity:0;transform:translateY(22px);transition:opacity .8s cubic-bezier(.16,.8,.3,1),transform .8s cubic-bezier(.16,.8,.3,1)}html.js .reveal.visible{opacity:1;transform:none}
@@ -38,8 +37,8 @@ html.js .reveal{opacity:0;transform:translateY(22px);transition:opacity .8s cubi
 @media(max-width:1080px){.links{display:none}.facts-grid{grid-template-columns:repeat(3,minmax(0,1fr))}.fact:nth-child(4){border-left:0;padding-left:0}.fact:nth-child(n+4){border-top:1px solid var(--line)}.foot{grid-template-columns:repeat(3,1fr)}.foot>div:first-child{grid-column:1/-1}}
 @media(max-width:920px){.nav .btn,.phone{display:none}.hero{padding:48px 0 64px}.hero-grid,.split,.rooms-grid,.req-grid,.reviews-grid{grid-template-columns:1fr;gap:40px}.dine-grid,.comfort-grid{grid-template-columns:1fr}.timeline{grid-template-columns:1fr;border-top:0;border-left:2px solid var(--charcoal);margin-left:6px}.timeline li{padding:0 0 26px 26px}.timeline li:before{top:4px;left:-7px}.section{padding:76px 0}.mobile-cta{display:grid;grid-template-columns:repeat(3,1fr);position:fixed;left:0;right:0;bottom:0;z-index:50;box-shadow:0 -6px 24px #0003}.mobile-cta .btn{min-height:56px;padding:0 6px;border-radius:0}body{padding-bottom:56px}}
 @media(max-width:560px){.wrap{width:calc(100% - 32px)}.nav{height:68px}.hero h1 .name{font-size:4.6rem}.facts-grid{grid-template-columns:1fr 1fr}.fact,.fact:first-child,.fact:nth-child(4){padding:18px 14px;border-left:0;border-top:1px solid var(--line)}.fact:nth-child(even){border-left:1px solid var(--line)}.fact:nth-child(-n+2){border-top:0}.checks,.fields{grid-template-columns:1fr}.room-card,.family,form.req{padding:24px 18px}.stay-card{padding:22px 20px}.foot{grid-template-columns:1fr 1fr}.addr{font-size:1.4rem}}
-.req-mark{color:#c0392b}.req-success{padding:28px 8px;text-align:center}.req-success-icon{font-size:2.2rem;line-height:1;margin:0 0 10px}.req-success-title{font-size:1.25rem;font-weight:700;margin:0 0 8px}.req-success-text{opacity:.8;margin:0 0 20px}</style><script>document.documentElement.classList.add('js')</script></head><body><a class="skip" href="#main">До основного змісту</a>
-<header id="top"><div class="wrap nav"><a class="logo" href="#top" aria-label="Deluxe, на початок сторінки"><strong>DELUXE</strong><small lang="en">Boutique Hotel · Kamianets-Podilskyi</small></a><nav class="links" aria-label="Основна навігація"><a href="#rooms">Номери</a><a href="#dine">Ресторан</a><a href="#breakfast">Сніданки</a><a href="#comfort">Зручності</a><a href="#reviews">Відгуки</a><a href="#contacts">Контакти</a></nav><a class="phone" href="tel:+380673064071">+380 67 306 40 71</a><a class="btn" href="#request">Забронювати номер</a></div></header>
+</style><script>document.documentElement.classList.add('js')</script></head><body><a class="skip" href="#main">До основного змісту</a>
+<header id="top"><div class="wrap nav"><a class="logo" href="#top" aria-label="Deluxe, на початок сторінки"><strong>DELUXE</strong><small lang="en">Boutique Hotel · Kamianets-Podilskyi</small></a><nav class="links" aria-label="Основна навігація"><a href="#rooms">Номери</a><a href="#dine">Ресторан</a><a href="#breakfast">Сніданки</a><a href="#comfort">Зручності</a><a href="#reviews">Відгуки</a><a href="#contacts">Контакти</a></nav><a class="phone" href="tel:+380673064071">+380 67 306 40 71</a><a class="btn" href="#stay-request">Забронювати номер</a></div></header>
 <main id="main">
 <section class="hero"><div class="wrap hero-grid"><div><h1><span class="name" lang="en">Deluxe</span><span class="full">Boutique Hotel · Кам’янець-Подільський</span></h1><h2>Комфортний формат для кількох днів у Кам’янці</h2><p class="sub">Номери з кондиціонуванням, ресторан, сніданки та Wi-Fi.</p><div class="actions"><a class="btn" href="#rooms">Переглянути номери</a><a class="btn line" href="https://maps.google.com/?cid=6566264760193915088" target="_blank" rel="noopener">Прокласти маршрут</a></div></div>
 <aside class="stay-card" aria-label="Коротко про перебування"><dl><div><dt>Заїзд</dt><dd>15:00–23:00</dd></div><div><dt>Виїзд</dt><dd>до 12:00</dd></div><div><dt>Парковка</dt><dd>безкоштовна</dd></div></dl><div class="score"><b>8.3</b><span>/ 10 · <a href="https://www.booking.com/hotel/ua/boutique-deluxe.html" target="_blank" rel="noopener">Booking.com, 121 відгук</a></span></div></aside></div></section>
@@ -49,7 +48,7 @@ html.js .reveal{opacity:0;transform:translateY(22px);transition:opacity .8s cubi
 <section class="section" id="about"><div class="wrap split"><div class="reveal"><p class="eyebrow" lang="en">Boutique Hotel Deluxe</p><h2 class="title">Все необхідне для комфортної зупинки</h2><p class="lead">Deluxe поєднує проживання з рестораном, сніданками та сервісами, які спрощують подорож.</p><div class="actions"><a class="btn" href="#rooms">Обрати проживання</a></div></div><div class="reveal"><div class="ph" style="--img:url('images/entrance.jpg')" role="img" aria-label="Рецепція готелю — ілюстративне фото"></div><ul class="checks" style="margin-top:28px"><li>Кондиціонування</li><li>Приватні ванні кімнати</li><li>Безкоштовний Wi-Fi</li><li>Безкоштовна парковка</li><li>Ресторан при готелі</li><li>Room service</li><li>Цілодобова рецепція</li><li>Сімейні номери</li></ul></div></div></section>
 
 <section class="section rooms" id="rooms"><div class="wrap"><div class="reveal"><p class="eyebrow" lang="en">Stay</p><h2 class="title">Ваш номер у Кам’янці</h2><p class="lead">Категорії номерів, фото й актуальні ціни — на Booking.com або за телефоном.</p></div>
-<div class="rooms-grid"><div class="room-card reveal"><div class="ph" style="--img:url('images/room.jpg')" role="img" aria-label="Номер Comfort — ілюстративне фото"></div><span class="tag" lang="en">Comfort</span><h3>У номерах</h3><ul class="room-list"><li><b>Кондиціонування</b><span>для спекотних днів</span></li><li><b>Приватна ванна кімната</b><span>без спільних зон</span></li><li><b>Безкоштовний Wi-Fi</b><span>для гостей готелю</span></li><li><b>Балкон</b><span>у частині номерів — уточнюйте при бронюванні</span></li></ul><div class="actions"><a class="btn" href="https://www.booking.com/hotel/ua/boutique-deluxe.html" target="_blank" rel="noopener">Категорії та ціни</a><a class="btn line" href="#request">Запит на бронювання</a></div></div>
+<div class="rooms-grid"><div class="room-card reveal"><div class="ph" style="--img:url('images/room.jpg')" role="img" aria-label="Номер Comfort — ілюстративне фото"></div><span class="tag" lang="en">Comfort</span><h3>У номерах</h3><ul class="room-list"><li><b>Кондиціонування</b><span>для спекотних днів</span></li><li><b>Приватна ванна кімната</b><span>без спільних зон</span></li><li><b>Безкоштовний Wi-Fi</b><span>для гостей готелю</span></li><li><b>Балкон</b><span>у частині номерів — уточнюйте при бронюванні</span></li></ul><div class="actions"><a class="btn" href="https://www.booking.com/hotel/ua/boutique-deluxe.html" target="_blank" rel="noopener">Категорії та ціни</a><a class="btn line" href="#stay-request">Запит на бронювання</a></div></div>
 <div class="family reveal"><div class="ph" style="--img:url('images/family.jpg')" role="img" aria-label="Сімейний номер — ілюстративне фото"></div><span class="tag" lang="en">Family</span><h3>Подорожуйте разом</h3><p>У Deluxe є сімейні номери. Обирайте такий номер і залишайте авто на безкоштовній парковці.</p><div class="actions"><a class="btn gold" href="https://www.booking.com/hotel/ua/boutique-deluxe.html" target="_blank" rel="noopener">Переглянути сімейні номери</a></div></div></div></div></section>
 
 <section class="section dine" id="dine"><div class="wrap"><div class="reveal"><p class="eyebrow" lang="en">Dine</p><h2 class="title">Залишайтеся на вечерю</h2><p class="lead">Ресторан, сніданки й room service — у тому ж готелі, де ви зупинилися.</p></div>
@@ -66,137 +65,159 @@ html.js .reveal{opacity:0;transform:translateY(22px);transition:opacity .8s cubi
 
 <section class="section location" id="location"><div class="wrap split"><div class="map reveal"><iframe src="https://www.google.com/maps?q=Boutique%20Hotel%20Deluxe%2C%20%D0%9D%D1%96%D0%B3%D1%96%D0%BD%D1%81%D1%8C%D0%BA%D0%B5%20%D1%88%D0%BE%D1%81%D0%B5%2C%2024%D0%90%2C%20%D0%9A%D0%B0%D0%BC%E2%80%99%D1%8F%D0%BD%D0%B5%D1%86%D1%8C-%D0%9F%D0%BE%D0%B4%D1%96%D0%BB%D1%8C%D1%81%D1%8C%D0%BA%D0%B8%D0%B9&output=embed" loading="lazy" referrerpolicy="no-referrer-when-downgrade" title="Boutique Hotel Deluxe на карті"></iframe></div><div class="reveal"><p class="eyebrow">Розташування</p><h2 class="title">Boutique Hotel Deluxe у Кам’янці-Подільському</h2><address class="addr">Нігінське шосе, 24А<br>Кам’янець-Подільський</address><p class="lead">Маршрут і час у дорозі — у Google Maps. Паркуйтеся безкоштовно на парковці готелю.</p><div class="actions"><a class="btn" href="https://maps.google.com/?cid=6566264760193915088" target="_blank" rel="noopener">Прокласти маршрут</a></div></div></div></section>
 
-<section class="section request" id="request"><div class="wrap req-grid"><div class="reveal"><p class="eyebrow">Бронювання</p><h2 class="title">Перевірити проживання</h2><p class="lead">Залиште заявку нижче — ми зателефонуємо або напишемо для підтвердження. Можна також бронювати за телефоном або на Booking.com.</p><div class="contact-list" id="contacts"><a href="tel:+380673064071"><small>Телефон</small><b>+380 67 306 40 71</b></a><a href="https://www.booking.com/hotel/ua/boutique-deluxe.html" target="_blank" rel="noopener"><small>Booking.com</small><b>Deluxe на Booking.com</b></a><div><small>Адреса</small><b>Нігінське шосе, 24А, Кам’янець-Подільський</b></div></div></div>
-<form class="req reveal"><p class="form-title">Перевірити проживання</p><div class="fields"><label class="f">Дата заїзду<input type="date" name="Заїзд"></label><label class="f">Дата виїзду<input type="date" name="Виїзд"></label><label class="f full">Гості<input type="number" name="Гостей" min="1" value="2"></label>
-<fieldset class="yn"><legend>Потрібен сімейний номер?</legend><div class="opts"><label class="opt"><input type="radio" name="Сімейний" value="Так"><span>Так</span></label><label class="opt"><input type="radio" name="Сімейний" value="Ні" checked><span>Ні</span></label></div></fieldset>
-<fieldset class="yn"><legend>Інформація про сніданок?</legend><div class="opts"><label class="opt"><input type="radio" name="Сніданок" value="Так"><span>Так</span></label><label class="opt"><input type="radio" name="Сніданок" value="Ні" checked><span>Ні</span></label></div></fieldset>
-<fieldset class="yn full"><legend>Цікавить ресторан?</legend><div class="opts"><label class="opt"><input type="radio" name="Ресторан" value="Так"><span>Так</span></label><label class="opt"><input type="radio" name="Ресторан" value="Ні" checked><span>Ні</span></label></div></fieldset>
-<label class="f"><span>Ім’я <b class="req-mark" aria-hidden="true">*</b></span><input type="text" name="Ім’я" autocomplete="name" required></label><label class="f"><span>Телефон <b class="req-mark" aria-hidden="true">*</b></span><input type="tel" name="Телефон" autocomplete="tel" required></label><label class="f full">Email<input type="email" name="Email" autocomplete="email"></label></div>
-<div class="req-foot"><button class="btn" type="submit">Перевірити доступність</button><p class="req-status" aria-live="polite"></p><p>Або телефонуйте: <a href="tel:+380673064071"><b>+380 67 306 40 71</b></a></p></div></form></div></section>
+<section class="section request" id="stay-request"><div class="wrap req-grid"><div class="reveal"><p class="eyebrow">Бронювання</p><h2 class="title">Перевірити проживання</h2><p class="lead">Залиште телефон і, за бажанням, дати поїздки — адміністратор зателефонує, щоб підтвердити доступність і вартість. Можна також бронювати за телефоном або на Booking.com.</p><div class="contact-list" id="contacts"><a href="tel:+380673064071"><small>Телефон</small><b>+380 67 306 40 71</b></a><a href="https://www.booking.com/hotel/ua/boutique-deluxe.html" target="_blank" rel="noopener"><small>Booking.com</small><b>Deluxe на Booking.com</b></a><div><small>Адреса</small><b>Нігінське шосе, 24А, Кам’янець-Подільський</b></div></div></div>
+<form class="req reveal" data-hotelos data-form-name="Запит на проживання" novalidate><p class="form-title">Перевірити проживання</p><div class="fields"><label class="f full">Телефон<small>Обов’язково, щоб ми могли передзвонити</small><input type="tel" name="phone" autocomplete="tel" inputmode="tel" required aria-describedby="stay-phone-error"><span id="stay-phone-error" data-error-for="phone"></span></label><label class="f">Ім’я<input type="text" name="name" autocomplete="name" maxlength="200"></label><label class="f">Гостей<input type="number" name="guests" min="1" max="50" inputmode="numeric"></label><label class="f">Дата заїзду<input type="date" name="checkIn"></label><label class="f">Дата виїзду<input type="date" name="checkOut" aria-describedby="stay-checkout-error"><span id="stay-checkout-error" data-error-for="checkOut"></span></label><label class="f full">Побажання<textarea name="message" maxlength="5000" placeholder="Сімейний номер, сніданок, пізній приїзд…"></textarea></label><label class="trap" aria-hidden="true">Не заповнюйте<input type="text" name="website" tabindex="-1" autocomplete="off"></label></div>
+<div class="req-foot"><button class="btn" type="submit">Надіслати запит</button><p>Або телефонуйте: <a href="tel:+380673064071"><b>+380 67 306 40 71</b></a></p></div><p data-status role="status" aria-live="polite"></p></form></div></section>
 
-<section class="final"><div class="wrap reveal"><p class="eyebrow" lang="en">Stay · Dine · Comfort</p><h2 class="title">Приїжджайте. Заселяйтеся. Решта вже поруч.</h2><p>Номери, ресторан, сніданки, Wi-Fi та безкоштовна парковка у Boutique Hotel Deluxe.</p><div class="actions"><a class="btn gold" href="tel:+380673064071">Забронювати номер</a><a class="btn ghost" href="https://maps.google.com/?cid=6566264760193915088" target="_blank" rel="noopener">Прокласти маршрут</a></div></div></section></main>
+<section class="final"><div class="wrap reveal"><p class="eyebrow" lang="en">Stay · Dine · Comfort</p><h2 class="title">Приїжджайте. Заселяйтеся. Решта вже поруч.</h2><p>Номери, ресторан, сніданки, Wi-Fi та безкоштовна парковка у Boutique Hotel Deluxe.</p><div class="actions"><a class="btn gold" href="tel:+380673064071">Забронювати номер</a><a class="btn ghost" href="#stay-request">Залишити запит</a><a class="btn ghost" href="https://maps.google.com/?cid=6566264760193915088" target="_blank" rel="noopener">Прокласти маршрут</a></div></div></section></main>
 
-<footer><div class="wrap"><div class="foot"><div><a class="logo" href="#top"><strong>DELUXE</strong><small lang="en">Boutique Hotel · Kamianets-Podilskyi</small></a><address>Нігінське шосе, 24А, Кам’янець-Подільський<a href="tel:+380673064071">+380 67 306 40 71</a></address></div><div><h4 lang="en">Stay</h4><a href="#rooms">Номери</a><a href="#rooms">Сімейні номери</a><a href="#request">Бронювання</a></div><div><h4 lang="en">Dine</h4><a href="#dine">Ресторан</a><a href="#breakfast">Сніданки</a><a href="#dine">Room service</a></div><div><h4 lang="en">Comfort</h4><a href="#rooms">Кондиціонування</a><a href="#comfort">Безкоштовний Wi-Fi</a><a href="#rooms">Балкони</a></div><div><h4 lang="en">Travel</h4><a href="#comfort">Безкоштовна парковка</a><a href="#day">Заїзд і виїзд</a></div><div><h4>Інформація</h4><a href="#reviews">Відгуки</a><a href="#location">Карта</a><a href="#contacts">Контакти</a></div></div><div class="copyright">© Boutique Hotel Deluxe · Нігінське шосе, 24А, Кам’янець-Подільський · Ціни, наявність і умови послуг уточнюйте в готелі.</div></div></footer>
-<nav class="mobile-cta" aria-label="Швидкі дії"><a class="btn gold" href="#request">Номер</a><a class="btn" href="tel:+380673064071">Подзвонити</a><a class="btn" href="https://maps.google.com/?cid=6566264760193915088" target="_blank" rel="noopener" style="background:var(--olive);border-color:var(--olive)">Карта</a></nav>
-<script>const io=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting){e.target.classList.add('visible');io.unobserve(e.target)}}),{threshold:.1});document.querySelectorAll('.reveal').forEach(el=>io.observe(el));</script><script>
-(function(){
-var ENDPOINT='https://it.webart.work/api/telegram/contact';
-var SLUG=location.hostname.split('.')[0];
-var KIND_LABELS={stay:'Проживання',group:'Група',event:'Подія',sauna:'Сауна'};
+<footer><div class="wrap"><div class="foot"><div><a class="logo" href="#top"><strong>DELUXE</strong><small lang="en">Boutique Hotel · Kamianets-Podilskyi</small></a><address>Нігінське шосе, 24А, Кам’янець-Подільський<a href="tel:+380673064071">+380 67 306 40 71</a></address></div><div><h4 lang="en">Stay</h4><a href="#rooms">Номери</a><a href="#rooms">Сімейні номери</a><a href="#stay-request">Бронювання</a></div><div><h4 lang="en">Dine</h4><a href="#dine">Ресторан</a><a href="#breakfast">Сніданки</a><a href="#dine">Room service</a></div><div><h4 lang="en">Comfort</h4><a href="#rooms">Кондиціонування</a><a href="#comfort">Безкоштовний Wi-Fi</a><a href="#rooms">Балкони</a></div><div><h4 lang="en">Travel</h4><a href="#comfort">Безкоштовна парковка</a><a href="#day">Заїзд і виїзд</a></div><div><h4>Інформація</h4><a href="#reviews">Відгуки</a><a href="#location">Карта</a><a href="#contacts">Контакти</a></div></div><div class="copyright">© Boutique Hotel Deluxe · Нігінське шосе, 24А, Кам’янець-Подільський · Ціни, наявність і умови послуг уточнюйте в готелі.</div></div></footer>
+<nav class="mobile-cta" aria-label="Швидкі дії"><a class="btn gold" href="#stay-request">Номер</a><a class="btn" href="tel:+380673064071">Подзвонити</a><a class="btn" href="https://maps.google.com/?cid=6566264760193915088" target="_blank" rel="noopener" style="background:var(--olive);border-color:var(--olive)">Карта</a></nav>
+<script>const io=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting){e.target.classList.add('visible');io.unobserve(e.target)}}),{threshold:.1});document.querySelectorAll('.reveal').forEach(el=>io.observe(el));</script>
+<script type="module">
+// HotelOS site forms. Paste this whole block into the site's index.html as an inline module
+// script right before the closing body tag, and set the three constants below. Never put a
+// literal closing script tag inside this file: it would end the inline script early.
+// Contract (hotelos.webart.work/CRM.md → Submission data contract, firestore.rules):
+// - every form is <form data-hotelos data-form-name="…" novalidate> inside a <section id="{formId}">;
+//   the section id IS the formId (stable slug, e.g. stay-request, sauna-request) and the CRM
+//   links to SITE + '#' + formId, so the link scrolls to the start of that section;
+// - fields are matched by name: phone (required), name, email, message, checkIn, checkOut, guests,
+//   roomType, date, time, service; a [data-genders] box renders one select per guest (hostels);
+// - errors go to [data-error-for="<name>"], the result to [data-status]; `website` is a honeypot.
+const HOTEL_ID = 'kp-deluxe'; // Firestore hotels/{id}: 'kp-' + site folder name
+const SITE = 'https://deluxe.webart.work/'; // from the site's CNAME
+const PHONE = '+380 67 306 40 71'; // shown when sending fails
 
-document.querySelectorAll('.section.request form.req').forEach(function(form){
-var kindRadios=form.querySelectorAll('input[name="kind"]');
-var applyKind=function(){
-var checked=form.querySelector('input[name="kind"]:checked');
-var val=checked?checked.value:null;
-form.querySelectorAll('[data-kind]').forEach(function(fs){
-var active=fs.getAttribute('data-kind')===val;
-fs.hidden=!active;
-fs.disabled=!active;
-});
+const FIREBASE = {
+	apiKey: 'AIzaSyBeSB5EuC4BBSpmCGA3Pjk7dD_JV2SdcSQ',
+	authDomain: 'hotel-upwork.firebaseapp.com',
+	projectId: 'hotel-upwork',
+	appId: '1:40129364672:web:c9659550ebf0f1d8a36325',
 };
-if(kindRadios.length){
-kindRadios.forEach(function(r){r.addEventListener('change',applyKind)});
-applyKind();
+const SDK = 'https://www.gstatic.com/firebasejs/12.19.0/';
+const TEXT_FIELDS = ['name', 'email', 'message', 'checkIn', 'checkOut', 'date', 'time', 'roomType', 'service'];
+const today = new Date(Date.now() - new Date().getTimezoneOffset() * 6e4).toISOString().slice(0, 10);
+
+let db;
+async function firestore() {
+	if (db) return db;
+	// Loaded on first submit only, so the page itself stays light.
+	const [{ initializeApp }, lite] = await Promise.all([import(SDK + 'firebase-app.js'), import(SDK + 'firebase-firestore-lite.js')]);
+	db = { lite, store: lite.getFirestore(initializeApp(FIREBASE)) };
+	return db;
 }
 
-var petRadios=form.querySelectorAll('input[name="Тварина"]');
-var petExtra=form.querySelector('.pet-extra');
-var applyPet=function(){
-var checked=form.querySelector('input[name="Тварина"]:checked');
-var show=!!checked&&checked.value==='Так';
-petExtra.hidden=!show;
-petExtra.querySelectorAll('input,select,textarea').forEach(function(el){el.disabled=!show});
-};
-if(petRadios.length&&petExtra){
-petRadios.forEach(function(r){r.addEventListener('change',applyPet)});
-applyPet();
+function setup(form) {
+	const formId = form.closest('section[id]')?.id;
+	if (!formId) return console.error('HotelOS form needs a parent <section id="formId">', form);
+	const field = (name) => form.elements.namedItem(name);
+	const statusEl = form.querySelector('[data-status]');
+	const submit = form.querySelector('[type=submit]');
+	const submitLabel = submit.textContent;
+	const gendersBox = form.querySelector('[data-genders]');
+
+	for (const name of ['checkIn', 'checkOut', 'date']) if (field(name)) field(name).min = today;
+	if (field('checkIn') && field('checkOut')) {
+		field('checkIn').addEventListener('change', () => {
+			const checkIn = field('checkIn').value;
+			field('checkOut').min = checkIn || today;
+			if (field('checkOut').value && field('checkOut').value <= checkIn) field('checkOut').value = '';
+		});
+	}
+
+	// Hostels: one gender select per guest, kept in sync with the guests count.
+	function renderGenders() {
+		if (!gendersBox) return;
+		const count = Math.min(Math.max(parseInt(field('guests')?.value, 10) || 1, 1), 20);
+		const current = [...gendersBox.querySelectorAll('select')].map((select) => select.value);
+		gendersBox.replaceChildren(
+			...Array.from({ length: count }, (_, i) => {
+				const label = document.createElement('label');
+				label.textContent = `Гість ${i + 1}`;
+				const select = document.createElement('select');
+				select.name = 'gender';
+				select.required = true;
+				select.innerHTML = '<option value="">Стать</option><option value="female">Жінка</option><option value="male">Чоловік</option>';
+				select.value = current[i] ?? '';
+				label.append(select);
+				return label;
+			}),
+		);
+	}
+	if (gendersBox) {
+		field('guests')?.addEventListener('input', renderGenders);
+		renderGenders();
+	}
+
+	function setError(name, text) {
+		const input = field(name);
+		if (input instanceof Element) input.setAttribute('aria-invalid', text ? 'true' : 'false');
+		const slot = form.querySelector(`[data-error-for="${name}"]`);
+		if (slot) slot.textContent = text;
+	}
+
+	function showStatus(state, html) {
+		statusEl.dataset.state = state;
+		statusEl.innerHTML = html;
+	}
+
+	form.addEventListener('submit', async (event) => {
+		event.preventDefault();
+		showStatus('', '');
+		const phone = field('phone').value.trim();
+		const digits = phone.replace(/\D/g, '');
+		setError('phone', digits.length < 9 || digits.length > 15 ? 'Вкажіть номер телефону, щоб ми могли передзвонити.' : '');
+		if (field('checkIn') && field('checkOut')) {
+			const { value: checkIn } = field('checkIn');
+			const { value: checkOut } = field('checkOut');
+			setError('checkOut', checkIn && checkOut && checkOut <= checkIn ? 'Дата виїзду має бути пізніше за дату заїзду.' : '');
+		}
+		const genderSelects = gendersBox ? [...gendersBox.querySelectorAll('select')] : [];
+		if (gendersBox) {
+			const missing = genderSelects.some((select) => !select.value);
+			for (const select of genderSelects) select.setAttribute('aria-invalid', missing && !select.value ? 'true' : 'false');
+			const slot = form.querySelector('[data-error-for="genders"]');
+			if (slot) slot.textContent = missing ? 'Вкажіть стать кожного гостя, щоб ми підібрали місця.' : '';
+		}
+		const invalid = form.querySelector('[aria-invalid=true]');
+		if (invalid) return invalid.focus();
+
+		const thanks = `Дякуємо! Ми зателефонуємо на ${phone.replace(/</g, '')} найближчим часом.`;
+		// Bots fill the hidden field: pretend success, send nothing.
+		if (field('website')?.value) {
+			form.reset();
+			renderGenders();
+			return showStatus('ok', thanks);
+		}
+
+		const lead = { phone, formId, formName: form.dataset.formName, site: SITE, hotelId: HOTEL_ID };
+		for (const name of TEXT_FIELDS) {
+			const value = field(name)?.value?.trim();
+			if (value) lead[name] = value;
+		}
+		const guests = parseInt(field('guests')?.value, 10);
+		if (guests >= 1 && guests <= 50) lead.guests = guests;
+		if (genderSelects.length) lead.genders = genderSelects.map((select) => select.value);
+
+		submit.disabled = true;
+		submit.textContent = 'Надсилаємо…';
+		try {
+			const { lite, store } = await firestore();
+			await lite.addDoc(lite.collection(store, 'submissions'), { ...lead, status: 'new', history: [], createdAt: lite.serverTimestamp() });
+			form.reset();
+			if (field('checkOut')) field('checkOut').min = today;
+			renderGenders();
+			showStatus('ok', thanks);
+		} catch (error) {
+			console.error(error);
+			showStatus('error', `Не вдалося надіслати запит. Зателефонуйте нам: <a href="tel:${PHONE.replace(/[^\d+]/g, '')}">${PHONE}</a>.`);
+		} finally {
+			submit.disabled = false;
+			submit.textContent = submitLabel;
+		}
+	});
 }
 
-var status=form.querySelector('.req-status');
-var submitBtn=form.querySelector('button[type="submit"]');
-
-var originalChildren=Array.prototype.slice.call(form.children);
-var successBox=document.createElement('div');
-successBox.className='req-success';
-successBox.hidden=true;
-successBox.innerHTML='<p class="req-success-icon" aria-hidden="true">✅</p><p class="req-success-title">Дякуємо!</p><p class="req-success-text"></p><button type="button" class="btn req-success-reset">Надіслати ще один запит</button>';
-form.appendChild(successBox);
-var successText=successBox.querySelector('.req-success-text');
-
-var showForm=function(){
-originalChildren.forEach(function(c){c.style.display=''});
-successBox.hidden=true;
-};
-var showSuccess=function(phoneVal){
-originalChildren.forEach(function(c){c.style.display='none'});
-successText.textContent='Ми зв’яжемось з вами'+(phoneVal?' за номером '+phoneVal:'')+' найближчим часом.';
-successBox.hidden=false;
-};
-
-successBox.querySelector('.req-success-reset').addEventListener('click',function(){
-showForm();
-form.reset();
-if(kindRadios.length)applyKind();
-if(petRadios.length&&petExtra)applyPet();
-if(status)status.textContent='';
-});
-
-form.addEventListener('submit',function(e){
-e.preventDefault();
-if(!form.reportValidity())return;
-
-var lines=[];
-form.querySelectorAll('input,select,textarea').forEach(function(el){
-if(!el.name||el.name==='kind'||el.disabled)return;
-if(el.closest('[hidden]'))return;
-if(el.type==='radio'||el.type==='checkbox'){
-if(!el.checked)return;
-}
-var val=(el.value||'').trim();
-if(!val)return;
-if(el.type==='checkbox'){
-var existing=lines.find(function(l){return l.name===el.name});
-if(existing){existing.value+=', '+val;return}
-}
-lines.push({name:el.name,value:val});
-});
-
-var kindEl=form.querySelector('input[name="kind"]:checked');
-var titleEl=form.querySelector('.form-title');
-var sectionTitle=form.closest('section');
-sectionTitle=sectionTitle?sectionTitle.querySelector('h2.title'):null;
-var heading=(titleEl&&titleEl.textContent.trim())||(sectionTitle&&sectionTitle.textContent.trim())||'Бронювання';
-
-var phoneLine=lines.find(function(l){return l.name==='Телефон'});
-var phoneVal=phoneLine?phoneLine.value:'';
-
-var text='📩 Заявка з сайту '+SLUG+'.webart.work\n'+heading+(kindEl?' ('+(KIND_LABELS[kindEl.value]||kindEl.value)+')':'')+'\n\n'+
-lines.map(function(l){return l.name+': '+l.value}).join('\n');
-
-if(submitBtn)submitBtn.disabled=true;
-if(status)status.textContent='Надсилаємо…';
-
-fetch(ENDPOINT,{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({slug:SLUG,message:text})})
-.then(function(r){return r.json()})
-.then(function(res){
-if(res===true){
-if(status)status.textContent='';
-form.reset();
-if(kindRadios.length)applyKind();
-if(petRadios.length&&petExtra)applyPet();
-showSuccess(phoneVal);
-}else{
-throw new Error('telegram failed');
-}
-})
-.catch(function(){
-if(status)status.textContent='Не вдалося надіслати заявку. Будь ласка, зателефонуйте нам.';
-})
-.finally(function(){
-if(submitBtn)submitBtn.disabled=false;
-});
-});
-});
-})();
+document.querySelectorAll('form[data-hotelos]').forEach(setup);
 </script></body></html>
